@@ -21,8 +21,14 @@ public class Game {
         Random random=new Random()
                 int RandomNumber=random.nextInt(20)
                         System.out.println(RandomNumber);
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");             
+        int Lucku = in.nextInt(); 
                  
-       while(RandomNumber != ){
+       while(Lucku != RandomNumber){
+            System.out.print("Input a number: ");             
+        int Lucku = in.nextInt(); 
+           
        } 
        }
     }

@@ -17,20 +17,25 @@ public class Game {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+           Scanner in = new Scanner(System.in);
+        System.out.print("If u want to play write 2 if u want to leave write 1:");             
+        int LeaveOrNo = in.nextInt();
+        while(LeaveOrNo==2){
         // TODO code application logic here
-        Random random=new Random()
-                int RandomNumber=random.nextInt(20)
-                        System.out.println(RandomNumber);
-        Scanner in = new Scanner(System.in);
+        Random random=new Random();
+                int RandomNumber=random.nextInt(20);
+                        System.out.println("RandomNumber:"+RandomNumber);
         System.out.print("Input a number: ");             
         int Lucku = in.nextInt(); 
                  
-       while(Lucku != RandomNumber){
-            System.out.print("Input a number: ");             
-        int Lucku = in.nextInt(); 
-           
-       } 
+        if(RandomNumber==Lucku){
+            System.out.println("You Win");     
        }
-    }
-    
+        else{
+          System.out.println("New Number u failed:"+Lucku);
+
+        }
+        }
+} 
 }
+    

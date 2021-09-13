@@ -18,10 +18,9 @@ public class Game {
      */
     public static void main(String[] args) {
            Scanner in = new Scanner(System.in);
-        System.out.print("If u want to play write 2 if u want to leave write 1:");             
-        int LeaveOrNo = in.nextInt();
+
         int Try=0;
-        while(LeaveOrNo==2){
+        for (int i=0;i<5; i++){
         // TODO code application logic here
         Random random=new Random();
                 int RandomNumber=random.nextInt(20);
